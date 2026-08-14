@@ -12,19 +12,19 @@ Wi-Fi-сети.
 
 **[Скачать последнюю версию APK](https://github.com/zayants/cell-scope-jk-bms/releases/latest)**
 
-Текущая версия: **1.0.4**. Поддерживается Android 8.0 и новее.
+Текущая версия: **1.0.5**. Поддерживается Android 8.0 и новее.
 
 APK распространяется для ручной установки. Android или Google Play Protect
 могут предупредить, что приложение установлено не из Google Play. Проверяйте
 имя файла, страницу релиза и контрольную сумму SHA-256 перед установкой.
 
-### Контрольная сумма версии 1.0.4
+### Контрольная сумма версии 1.0.5
 
 ```text
-DDCAD682BE4CF1A890DA0F90874F8ED04C30BC8FBAD440CBB3B6D6A1AB2BB28A
+6F76E2FFFCE592C717008404FFCBFB59D82948190B79289340B983F764019CFF
 ```
 
-Файл: `BMS-Monitor-1.0.4.apk`
+Файл: `BMS-Monitor-1.0.5.apk`
 
 ## Возможности
 
@@ -88,4 +88,3 @@ DDCAD682BE4CF1A890DA0F90874F8ED04C30BC8FBAD440CBB3B6D6A1AB2BB28A
 
 Ошибки и результаты проверки новых моделей BMS можно отправлять через
 [Issues](https://github.com/zayants/cell-scope-jk-bms/issues).
-
