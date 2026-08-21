@@ -1,23 +1,22 @@
-БМС Монитор — Proprietary License
+BMS Monitor — Proprietary License
 
 Copyright (c) 2026 zayants. All rights reserved.
 
-Дизайн интерфейса, изображения, документация и бинарные сборки проекта
-«БМС Монитор» охраняются авторским правом.
+The user interface design, images, documentation, and binary application builds
+of BMS Monitor are protected by copyright.
 
-Пользователю разрешается скачать официальный APK из GitHub Releases, установить
-его на принадлежащее ему Android-устройство и использовать приложение в личных
-некоммерческих целях.
+You may download the official APK from GitHub Releases, install it on an Android
+device that you own, and use it for personal, non-commercial purposes.
 
-Без предварительного письменного разрешения правообладателя запрещаются:
+Without prior written permission from the copyright owner, you may not:
 
-- повторная публикация APK или его распространение от имени другого автора;
-- изменение, декомпиляция и создание производных работ;
-- продажа, передача или использование в коммерческих продуктах;
-- удаление или изменение сведений об авторстве.
+- republish the APK or distribute it under another author's name;
+- modify, decompile, reverse engineer, or create derivative works;
+- sell, transfer, or include it in a commercial product;
+- remove or alter authorship and copyright notices.
 
-Публикация репозитория не означает передачу исключительных прав. Ссылаться на
-официальную страницу проекта и официальные файлы GitHub Releases разрешается.
+Publication of this repository does not transfer any exclusive rights. Linking
+to the official project page and official GitHub Release files is permitted.
 
-Для получения разрешения на использование обращайтесь к владельцу аккаунта
-GitHub: https://github.com/zayants
+For permission requests, contact the GitHub account owner:
+https://github.com/zayants

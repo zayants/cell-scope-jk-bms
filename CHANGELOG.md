@@ -1,17 +1,24 @@
-# История выпусков
+# Release history
 
-## 1.0.4 — 14 августа 2026
+## 1.0.5 — August 14, 2026
 
-- добавлен выбор системного, украинского, русского и английского языка;
-- язык локальной веб-панели синхронизирован с приложением;
-- локализовано описание состояния балансировки;
-- под QR-кодом добавлен цифровой адрес веб-панели;
-- сохранена совместимость подписи с версией 1.0.3.
+- Made the portrait station screen scrollable on phones with limited height.
+- Prevented Android system bars from covering the header and lower cells.
+- Made cell-area height adapt to battery configurations from 4S to 16S.
+- Preserved the landscape full-screen layout.
 
-## 1.0.3 — 13 августа 2026
+## 1.0.4 — August 14, 2026
 
-- первый публичный подписанный выпуск;
-- мониторинг JK/Jikong BMS по Bluetooth LE;
-- локальная веб-панель и Telegram-запросы;
-- вертикальный и альбомный интерфейсы;
-- автоматическое переподключение и выбор устройства.
+- Added system, English, Ukrainian, and Russian language selection.
+- Synchronized the local web dashboard language with the application.
+- Localized balancing-status descriptions.
+- Added a readable web-dashboard address below the QR code.
+- Preserved signing compatibility with version 1.0.3.
+
+## 1.0.3 — August 13, 2026
+
+- First publicly distributed signed release.
+- Added JK/Jikong BMS monitoring over Bluetooth LE.
+- Added the local web dashboard and Telegram data requests.
+- Added portrait and landscape station layouts.
+- Added automatic reconnection and Bluetooth device selection.

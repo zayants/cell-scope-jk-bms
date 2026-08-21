@@ -1,41 +1,41 @@
-name: Отчёт о совместимости
-description: Результат проверки новой BMS или Android-устройства
-title: "[Совместимость]: "
+name: Compatibility report
+description: Share test results for a BMS model or Android device
+title: "[Compatibility]: "
 labels: ["compatibility"]
 body:
   - type: input
     id: bms
     attributes:
-      label: BMS и firmware
+      label: BMS model and firmware
       placeholder: JK-B1A8S10P, firmware 15.41
     validations:
       required: true
   - type: input
     id: cells
     attributes:
-      label: Количество и тип ячеек
+      label: Cell configuration and chemistry
       placeholder: 8S LiFePO4
     validations:
       required: true
   - type: input
     id: android
     attributes:
-      label: Устройство и Android
+      label: Device and Android version
       placeholder: Xiaomi Redmi 12, Android 15
     validations:
       required: true
   - type: checkboxes
     id: checks
     attributes:
-      label: Что работает корректно
+      label: What works correctly?
       options:
-        - label: BLE подключается
-        - label: SOC соответствует штатному приложению
-        - label: Ток соответствует штатному приложению
-        - label: Напряжения ячеек корректны
-        - label: Температуры корректны
-        - label: Локальный web dashboard работает
+        - label: BLE connection
+        - label: SOC matches the official application
+        - label: Current matches the official application
+        - label: Cell voltages are correct
+        - label: Temperatures are correct
+        - label: Local web dashboard works
   - type: textarea
     id: notes
     attributes:
-      label: Замечания, отличия и скриншоты
+      label: Notes, differences, and screenshots

@@ -1,44 +1,44 @@
-name: Сообщить об ошибке
-description: Ошибка подключения, показаний, интерфейса или web dashboard
-title: "[Ошибка]: "
+name: Bug report
+description: Report a connection, telemetry, interface, or web dashboard problem
+title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
-      value: Не публикуйте Telegram-токен, ключи или другие секреты.
+      value: Do not publish Telegram tokens, keys, MAC addresses, or other secrets.
   - type: input
     id: app-version
     attributes:
-      label: Версия приложения
-      placeholder: 1.0.2
+      label: Application version
+      placeholder: 1.0.5
     validations:
       required: true
   - type: input
     id: phone
     attributes:
-      label: Телефон и версия Android
+      label: Phone and Android version
       placeholder: Xiaomi Redmi 12, Android 15
     validations:
       required: true
   - type: input
     id: bms
     attributes:
-      label: Модель и firmware BMS
+      label: BMS model and firmware
       placeholder: JK-B1A8S10P, firmware 15.41
   - type: input
     id: cells
     attributes:
-      label: Количество ячеек
+      label: Cell count
       placeholder: 8
   - type: textarea
     id: problem
     attributes:
-      label: Что произошло
-      description: Опишите ожидаемое и фактическое поведение, а также шаги воспроизведения.
+      label: What happened?
+      description: Describe expected and actual behavior and provide reproduction steps.
     validations:
       required: true
   - type: textarea
     id: attachments
     attributes:
-      label: Скриншоты и безопасные фрагменты логов
-      description: Перед публикацией удалите MAC-адреса и токены.
+      label: Screenshots and safe log excerpts
+      description: Remove MAC addresses, tokens, and other private data before posting.
