@@ -1,5 +1,10 @@
 # Release history
 
+## 1.0.8 — August 21, 2026
+
+- Shortens the temperature label in the landscape dashboard so it no longer overlaps the live value.
+- Uses `ТЕМП.` in the Russian and Ukrainian interfaces and `TEMP.` in English.
+
 ## 1.0.7 — August 21, 2026
 
 - Uses standard English measurement units: V, A, mV, W, kW, and Ah.

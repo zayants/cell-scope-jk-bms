@@ -11,19 +11,19 @@ web dashboard for computers and other devices on the same Wi-Fi network.
 
 **[Download the latest APK from GitHub Releases](https://github.com/zayants/cell-scope-jk-bms/releases/latest)**
 
-Current public version: **1.0.7**. Requires **Android 8.0 or later**.
+Current public version: **1.0.8**. Requires **Android 8.0 or later**.
 
 The APK is distributed for manual installation. Android or Google Play Protect
 may warn that it was downloaded outside Google Play. Always verify the filename,
 release page, and SHA-256 checksum before installing it.
 
-### Version 1.0.7 checksum
+### Version 1.0.8 checksum
 
 ```text
-5BC405C8E476F673FB5C2DA0B7488B642945AA0197B4201740323475E6D1B79C
+52B18E10C3288D13659FC7BE81B2CE75472A317EAB7E37A6DB9DE9B4E1F90F10
 ```
 
-File: `BMS-Monitor-1.0.7.apk`
+File: `BMS-Monitor-1.0.8.apk`
 
 ## Features
 
