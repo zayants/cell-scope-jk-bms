@@ -45,11 +45,11 @@ MOSFET states. The current version provides local balancing control.
 
 ### Portrait mode
 
-![BMS Monitor portrait dashboard](screenshots/station-portrait.png)
+![BMS Monitor portrait dashboard](screenshots/station-portrait-v1.0.7.png)
 
 ### Landscape mode
 
-![BMS Monitor landscape dashboard](screenshots/station-landscape.png)
+![BMS Monitor landscape dashboard](screenshots/station-landscape-v1.0.7.png)
 
 ## Status colors
 
