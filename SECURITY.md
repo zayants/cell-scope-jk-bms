@@ -1,23 +1,23 @@
-# Безопасность
+# Security policy
 
-## Сообщение об уязвимости
+## Reporting a vulnerability
 
-Не публикуйте токены, ключи подписи, MAC-адреса и другие чувствительные данные в
-открытом Issue. Используйте приватное сообщение об уязвимости в разделе
-[Security Advisories](https://github.com/zayants/cell-scope-jk-bms/security/advisories/new).
+Do not post bot tokens, signing keys, MAC addresses, or other sensitive data in
+a public issue. Use a private
+[GitHub Security Advisory](https://github.com/zayants/cell-scope-jk-bms/security/advisories/new).
 
-Укажите версию приложения, Android, модель BMS, способ воспроизведения и влияние
-проблемы. Секреты и полные журналы прикладывайте только после согласования.
+Include the application version, Android version, BMS model, reproduction steps,
+and impact. Share secrets or complete logs only after coordinating privately.
 
-## Модель безопасности
+## Security model
 
-- локальный web server слушает порт 8080 и доступен участникам локальной сети;
-- встроенной авторизации web dashboard сейчас нет;
-- HTTP-интерфейс предоставляет только чтение телеметрии (`GET`/`HEAD`);
-- не следует публиковать порт 8080 в интернет;
-- Telegram-токен вводится пользователем и не должен попадать в Issue или логи;
-- приложение не изменяет параметры защит или состояние MOSFET;
-- локальный Android-интерфейс умеет включать и выключать балансировку.
+- The local web server listens on port 8080 and is reachable from the local network.
+- The web dashboard currently has no built-in authentication.
+- Its HTTP API provides read-only telemetry through `GET` and `HEAD` requests.
+- Do not expose port 8080 to the public internet.
+- Telegram bot tokens are supplied by the user and must not appear in issues or logs.
+- The application does not change BMS protection settings or MOSFET states.
+- The local Android interface can enable or disable balancing.
 
-Публичные исправления уязвимостей выпускаются после подготовки безопасного
-обновления. Поддерживаемой считается последняя версия из GitHub Releases.
+Public security fixes are released after a safe update is prepared. Only the
+latest version in GitHub Releases is considered supported.

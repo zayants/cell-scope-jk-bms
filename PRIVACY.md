@@ -1,37 +1,36 @@
-# Политика конфиденциальности
+# Privacy policy
 
-Последнее обновление: 13 августа 2026 года.
+Last updated: August 13, 2026.
 
-«БМС Монитор» не создаёт аккаунт и не отправляет данные разработчику. Телеметрия
-BMS и история измерений хранятся локально на Android-устройстве. Адрес последней
-выбранной BMS сохраняется локально для автоматического переподключения.
+BMS Monitor does not require an account and does not send application data to
+the developer. BMS telemetry and measurement history are stored locally on the
+Android device. The address of the last selected BMS is stored locally for
+automatic reconnection.
 
-## Bluetooth и геолокация
+## Bluetooth and location
 
-Android требует разрешения Bluetooth, а на части версий Android и прошивок —
-разрешение и включённую системную геолокацию для полного BLE-сканирования.
-Приложение не запрашивает координаты, не определяет местоположение и не передаёт
-его разработчику или стороннему серверу.
+Android requires Bluetooth permissions. Some Android versions and vendor
+firmware also require Location permission and the system Location switch for
+complete BLE scanning. The application does not request coordinates, determine
+your location, or transmit location data to the developer or a third-party server.
 
-## Локальный веб-монитор
+## Local web dashboard
 
-Приложение запускает HTTP-сервер на порту 8080. Он показывает телеметрию любому
-устройству, имеющему доступ к этому адресу в той же локальной сети. Встроенной
-авторизации нет, поэтому используйте доверенную Wi‑Fi-сеть и не пробрасывайте
-порт 8080 в интернет.
+The application starts an HTTP server on port 8080. It exposes telemetry to any
+device that can reach the address on the same local network. There is no built-in
+authentication. Use a trusted Wi-Fi network and do not expose port 8080 to the internet.
 
 ## Telegram
 
-Telegram работает только после того, как пользователь самостоятельно введёт
-токен своего бота и разрешённый chat ID. Токен хранится локально в настройках
-приложения; резервное копирование приложения средствами Android отключено.
-Запросы и ответы передаются напрямую API Telegram в соответствии с политикой
-Telegram. Без настройки Telegram основной BLE-монитор продолжает работать.
+Telegram integration works only after the user enters a bot token and authorizes
+a chat ID. The token is stored locally in application settings, and Android app
+backup is disabled. Requests and responses go directly through the Telegram API
+under Telegram's own privacy terms. BLE monitoring works without Telegram.
 
-## Удаление данных
+## Removing local data
 
-Локальные настройки и историю можно удалить стандартной командой Android
-«Очистить данные» или удалением приложения.
+Delete local settings and history through Android's **Clear storage** action or
+by uninstalling the application.
 
-Вопросы можно направить владельцу проекта:
+Questions can be directed to the project owner:
 <https://github.com/zayants/cell-scope-jk-bms>.

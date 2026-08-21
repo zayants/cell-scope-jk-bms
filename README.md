@@ -1,90 +1,89 @@
-# БМС Монитор — JK/Jikong BMS
+# BMS Monitor for JK/Jikong BMS
 
-Приложение для мониторинга аккумуляторов с JK/Jikong BMS по Bluetooth LE.
-Показывает состояние батареи на Android-устройстве и предоставляет локальную
-веб-панель для просмотра данных с компьютера или другого телефона в той же
-Wi-Fi-сети.
+An Android battery monitor for JK/Jikong BMS devices over Bluetooth Low Energy.
+It displays live battery and cell data on a phone or tablet and provides a local
+web dashboard for computers and other devices on the same Wi-Fi network.
 
-> © 2026 zayants. All rights reserved. Это публичный репозиторий готовых
-> выпусков. Исходный код приложения не публикуется.
+> © 2026 zayants. All rights reserved. This repository distributes official
+> application releases and documentation. The application source code is not public.
 
-## Скачать
+## Download
 
-**[Скачать последнюю версию APK](https://github.com/zayants/cell-scope-jk-bms/releases/latest)**
+**[Download the latest APK from GitHub Releases](https://github.com/zayants/cell-scope-jk-bms/releases/latest)**
 
-Текущая версия: **1.0.5**. Поддерживается Android 8.0 и новее.
+Current public version: **1.0.6**. Requires **Android 8.0 or later**.
 
-APK распространяется для ручной установки. Android или Google Play Protect
-могут предупредить, что приложение установлено не из Google Play. Проверяйте
-имя файла, страницу релиза и контрольную сумму SHA-256 перед установкой.
+The APK is distributed for manual installation. Android or Google Play Protect
+may warn that it was downloaded outside Google Play. Always verify the filename,
+release page, and SHA-256 checksum before installing it.
 
-### Контрольная сумма версии 1.0.5
+### Version 1.0.6 checksum
 
 ```text
-6F76E2FFFCE592C717008404FFCBFB59D82948190B79289340B983F764019CFF
+5A1815BA6FB2C9FFD6B9F80B8343BE326566624F0AEE6C3BC902757653AF8104
 ```
 
-Файл: `BMS-Monitor-1.0.5.apk`
+File: `BMS-Monitor-1.0.6.apk`
 
-## Возможности
+## Features
 
-- SOC, напряжение, ток, мощность и оставшаяся ёмкость;
-- прогноз времени до полного заряда или разряда;
-- температура, разбаланс и аварийные состояния;
-- напряжение каждой ячейки и активная балансировка;
-- выбор конкретной BMS из найденных Bluetooth-устройств;
-- автоматическое переподключение к выбранной BMS;
-- русский, украинский и английский интерфейс;
-- вертикальный и альбомный режимы;
-- локальная веб-панель по Wi-Fi с QR-кодом и цифровым адресом;
-- получение данных по запросу через Telegram-бота.
+- SOC, total voltage, current, power, and remaining capacity;
+- estimated time to full charge or discharge;
+- battery temperature, cell imbalance, and alarm status;
+- individual cell voltages and active balancing indication;
+- selection of a specific BMS from discovered Bluetooth devices;
+- automatic reconnection to the selected BMS;
+- English, Ukrainian, and Russian interfaces;
+- portrait and landscape layouts for phones and tablets;
+- local Wi-Fi web dashboard with a QR code and readable network address;
+- on-demand telemetry through a user-configured Telegram bot.
 
-Приложение не изменяет защитные параметры BMS и состояние зарядного или
-разрядного MOSFET. В текущей версии доступно локальное управление балансировкой.
+The application does not change BMS protection settings or charge/discharge
+MOSFET states. The current version provides local balancing control.
 
-## Реальные экраны приложения
+## Real application screens
 
-### Вертикальный режим
+### Portrait mode
 
-![Вертикальный экран БМС Монитор](screenshots/station-portrait.png)
+![BMS Monitor portrait dashboard](screenshots/station-portrait.png)
 
-### Альбомный режим
+### Landscape mode
 
-![Альбомный экран БМС Монитор](screenshots/station-landscape.png)
+![BMS Monitor landscape dashboard](screenshots/station-landscape.png)
 
-## Цветовые обозначения
+## Status colors
 
-| Цвет | Значение |
+| Color | Meaning |
 | --- | --- |
-| Голубой | Нормальное значение |
-| Зелёный | Соединение установлено или ячейка участвует в балансировке |
-| Жёлтый | Предупреждение |
-| Красный | Авария или критическое отклонение |
-| Синий | Низкая температура |
-| Серый или прочерк | Нет актуальных данных от BMS |
+| Cyan | Normal value |
+| Green | Connected, normal, or actively balancing cell |
+| Yellow | Warning |
+| Red | Alarm or critical deviation |
+| Blue | Low temperature |
+| Gray or dash | No current BMS data |
 
-## Bluetooth и геолокация
+## Bluetooth and location requirements
 
-На Android 11 и некоторых прошивках Xiaomi для полного BLE-сканирования должна
-быть включена системная геолокация. Приложение не определяет, не сохраняет и не
-передаёт координаты пользователя. На Android 12 и новее также необходимо
-разрешение «Устройства поблизости».
+Android 11 and some Xiaomi firmware versions require system Location to be
+enabled for complete BLE scanning. BMS Monitor does not determine, store, or
+transmit your location. Android 12 and later also require the Nearby devices
+permission.
 
-Перед подключением закройте штатное приложение JK BMS: одна BMS обычно не
-поддерживает два активных BLE-соединения одновременно.
+Close the official JK BMS application before connecting. Most BMS devices allow
+only one active BLE client at a time.
 
-## Совместимость
+## Compatibility
 
-Проверено на Android 8, 11/12 и 15, а также на JK-B1A8S10P с протоколом JK02.
-Другие модели JK/Jikong могут работать, но требуют проверки на реальном
-оборудовании.
+Tested on Android 8, Android 11/12, and Android 15 with a JK-B1A8S10P using the
+JK02 protocol. Other JK/Jikong models may work but should be verified on real
+hardware. Compatibility reports are welcome.
 
-## Конфиденциальность и безопасность
+## Privacy, security, and support
 
-- [Политика конфиденциальности](PRIVACY.md)
-- [Безопасность и сообщение об уязвимостях](SECURITY.md)
-- [Авторство](AUTHORS)
-- [Условия использования](LICENSE)
+- [Privacy policy](PRIVACY.md)
+- [Security policy and vulnerability reporting](SECURITY.md)
+- [Authorship](AUTHORS)
+- [License](LICENSE)
 
-Ошибки и результаты проверки новых моделей BMS можно отправлять через
-[Issues](https://github.com/zayants/cell-scope-jk-bms/issues).
+Report bugs and tested BMS models through
+[GitHub Issues](https://github.com/zayants/cell-scope-jk-bms/issues).
