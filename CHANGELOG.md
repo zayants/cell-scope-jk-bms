@@ -1,5 +1,12 @@
 # Release history
 
+## 1.0.7 — August 21, 2026
+
+- Uses standard English measurement units: V, A, mV, W, kW, and Ah.
+- Synchronizes units across the station dashboard, overview, cell cards, graphs, and Telegram messages.
+- Preserves localized units for the Ukrainian and Russian interfaces.
+- Refreshes the public screenshots with real English application screens.
+
 ## 1.0.6 — August 21, 2026
 
 - Reuses one Android GATT client while the BMS is powered off.
