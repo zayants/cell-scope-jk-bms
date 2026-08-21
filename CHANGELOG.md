@@ -1,5 +1,13 @@
 # Release history
 
+## 1.0.6 — August 21, 2026
+
+- Reuses one Android GATT client while the BMS is powered off.
+- Reconnects immediately when the saved BMS becomes available again.
+- Prevents cancelled GATT attempts from accumulating and triggering repeated beeps.
+- Retries FFE1 notification setup without repeatedly sending BMS commands.
+- Uses English on first launch while retaining System, Ukrainian, and Russian options.
+
 ## 1.0.5 — August 14, 2026
 
 - Made the portrait station screen scrollable on phones with limited height.
