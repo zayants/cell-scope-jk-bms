@@ -1,5 +1,13 @@
 # Release history
 
+## 1.0.9 — August 22, 2026
+
+- Adds selectable LiFePO₄, NMC/Li-ion, and LTO cell-voltage profiles.
+- Adds a custom profile with editable low/high warning and critical limits.
+- Applies the selected profile consistently to the Android dashboard, local web dashboard, and Telegram status cards.
+- Keeps all profile limits local to the display; the application does not write them to the BMS or change BMS protection settings.
+- Adds the community-tested JK_BD6A17S8P, firmware 15.15, 10S NMC configuration to the compatibility notes.
+
 ## 1.0.8 — August 21, 2026
 
 - Shortens the temperature label in the landscape dashboard so it no longer overlaps the live value.
