@@ -1,5 +1,12 @@
 # Release history
 
+## 1.0.10 — August 22, 2026
+
+- Adds separate persistent settings for keeping the screen awake and using the fullscreen station display.
+- Stops forcing the screen to remain awake and stops forcing fullscreen mode by default.
+- Adds a background-monitoring switch with a clear explanation of its relationship to the local web dashboard, Telegram, and automatic reconnection.
+- When background monitoring is disabled, leaving the application stops monitoring, cancels automatic reconnection, and fully releases the Bluetooth connection for the official JK application.
+
 ## 1.0.9 — August 22, 2026
 
 - Adds selectable LiFePO₄, NMC/Li-ion, and LTO cell-voltage profiles.
